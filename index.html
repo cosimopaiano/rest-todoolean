@@ -1,0 +1,41 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>rest-todoolean - C. Paiano</title>
+        <!-- Fontawsome -->
+        <script src="https://kit.fontawesome.com/afce777129.js" crossorigin="anonymous"></script>
+        <!-- css -->
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <input class="input" type="text" placeholder="Inserisci nuovo todo" />
+                <button id="todo-btn">Inserisci</button>
+                <ul class="todos">
+        
+                </ul>
+            </main>
+        </div>
+    
+        <!-- Handlebars template -->
+        <script id="todo-template" type="text/x-handlebars-template">
+            <li class="todo">
+                <span>{{ todo }}</span>
+                <span class="remove" data-id="{{ id }}"><i class="fas fa-trash-alt"></i></span>
+            </li>
+        </script>
+        
+    
+
+       
+        <!-- JS -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js'></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
